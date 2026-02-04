@@ -63,3 +63,4 @@ coverage.xml
 
 # Configuracion de odoo
 odoo.conf
+config/odoo.conf
