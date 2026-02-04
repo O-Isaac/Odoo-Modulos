@@ -1,0 +1,144 @@
+<odoo>
+    <data noupdate="1">
+        <record id="multa_1" model="gestion.multa">
+            <field name="name">Exceso velocidad (Ciudad)</field>
+            <field name="importe">100</field>
+            <field name="empleado_id" ref="emp_1" />
+            <field name="vehiculo_id" ref="veh_1" />
+            <field name="state">pendiente</field>
+        </record>
+        <record id="multa_2" model="gestion.multa">
+            <field name="name">Aparcar en carga/descarga</field>
+            <field name="importe">90</field>
+            <field name="empleado_id" ref="emp_2" />
+            <field name="vehiculo_id" ref="veh_2" />
+            <field name="state">pagada</field>
+        </record>
+        <record id="multa_3" model="gestion.multa">
+            <field name="name">Uso de móvil al volante</field>
+            <field name="importe">200</field>
+            <field name="empleado_id" ref="emp_3" />
+            <field name="vehiculo_id" ref="veh_3" />
+            <field name="state">recurrida</field>
+        </record>
+        <record id="multa_4" model="gestion.multa">
+            <field name="name">Saltarse semáforo en rojo</field>
+            <field name="importe">200</field>
+            <field name="empleado_id" ref="emp_4" />
+            <field name="vehiculo_id" ref="veh_4" />
+            <field name="state">pendiente</field>
+        </record>
+        <record id="multa_5" model="gestion.multa">
+            <field name="name">Giro prohibido</field>
+            <field name="importe">60</field>
+            <field name="empleado_id" ref="emp_5" />
+            <field name="vehiculo_id" ref="veh_5" />
+            <field name="state">pagada</field>
+        </record>
+        <record id="multa_6" model="gestion.multa">
+            <field name="name">ITV caducada</field>
+            <field name="importe">150</field>
+            <field name="empleado_id" ref="emp_6" />
+            <field name="vehiculo_id" ref="veh_6" />
+            <field name="state">pendiente</field>
+        </record>
+        <record id="multa_7" model="gestion.multa">
+            <field name="name">No respetar señal STOP</field>
+            <field name="importe">120</field>
+            <field name="empleado_id" ref="emp_7" />
+            <field name="vehiculo_id" ref="veh_7" />
+            <field name="state">pagada</field>
+        </record>
+        <record id="multa_8" model="gestion.multa">
+            <field name="name">Aparcar en vado</field>
+            <field name="importe">80</field>
+            <field name="empleado_id" ref="emp_8" />
+            <field name="vehiculo_id" ref="veh_8" />
+            <field name="state">recurrida</field>
+        </record>
+        <record id="multa_9" model="gestion.multa">
+            <field name="name">Sin luces en túnel</field>
+            <field name="importe">50</field>
+            <field name="empleado_id" ref="emp_9" />
+            <field name="vehiculo_id" ref="veh_9" />
+            <field name="state">pagada</field>
+        </record>
+        <record id="multa_10" model="gestion.multa">
+            <field name="name">Exceso velocidad (Autopista)</field>
+            <field name="importe">300</field>
+            <field name="empleado_id" ref="emp_10" />
+            <field name="vehiculo_id" ref="veh_10" />
+            <field name="state">pendiente</field>
+        </record>
+        <record id="multa_11" model="gestion.multa">
+            <field name="name">Aparcamiento prohibido</field>
+            <field name="importe">40</field>
+            <field name="empleado_id" ref="emp_1" />
+            <field name="vehiculo_id" ref="veh_1" />
+            <field name="state">pagada</field>
+        </record>
+        <record id="multa_12" model="gestion.multa">
+            <field name="name">Cambio de carril sin señal</field>
+            <field name="importe">80</field>
+            <field name="empleado_id" ref="emp_11" />
+            <field name="vehiculo_id" ref="veh_11" />
+            <field name="state">pendiente</field>
+        </record>
+        <record id="multa_13" model="gestion.multa">
+            <field name="name">Conducción negligente</field>
+            <field name="importe">500</field>
+            <field name="empleado_id" ref="emp_12" />
+            <field name="vehiculo_id" ref="veh_12" />
+            <field name="state">recurrida</field>
+        </record>
+        <record id="multa_14" model="gestion.multa">
+            <field name="name">Obstaculizar carril bus</field>
+            <field name="importe">100</field>
+            <field name="empleado_id" ref="emp_13" />
+            <field name="vehiculo_id" ref="veh_13" />
+            <field name="state">pendiente</field>
+        </record>
+        <record id="multa_15" model="gestion.multa">
+            <field name="name">Cinturón de seguridad</field>
+            <field name="importe">200</field>
+            <field name="empleado_id" ref="emp_14" />
+            <field name="vehiculo_id" ref="veh_14" />
+            <field name="state">pagada</field>
+        </record>
+        <record id="multa_16" model="gestion.multa">
+            <field name="name">Exceso de ruido</field>
+            <field name="importe">150</field>
+            <field name="empleado_id" ref="emp_15" />
+            <field name="vehiculo_id" ref="veh_15" />
+            <field name="state">pendiente</field>
+        </record>
+        <record id="multa_17" model="gestion.multa">
+            <field name="name">Matrícula sucia</field>
+            <field name="importe">40</field>
+            <field name="empleado_id" ref="emp_16" />
+            <field name="vehiculo_id" ref="veh_16" />
+            <field name="state">pagada</field>
+        </record>
+        <record id="multa_18" model="gestion.multa">
+            <field name="name">Frenazo injustificado</field>
+            <field name="importe">80</field>
+            <field name="empleado_id" ref="emp_17" />
+            <field name="vehiculo_id" ref="veh_17" />
+            <field name="state">pendiente</field>
+        </record>
+        <record id="multa_19" model="gestion.multa">
+            <field name="name">Exceso carga camión</field>
+            <field name="importe">400</field>
+            <field name="empleado_id" ref="emp_18" />
+            <field name="vehiculo_id" ref="veh_18" />
+            <field name="state">recurrida</field>
+        </record>
+        <record id="multa_20" model="gestion.multa">
+            <field name="name">Circulación sentido contrario</field>
+            <field name="importe">500</field>
+            <field name="empleado_id" ref="emp_19" />
+            <field name="vehiculo_id" ref="veh_19" />
+            <field name="state">pendiente</field>
+        </record>
+    </data>
+</odoo>

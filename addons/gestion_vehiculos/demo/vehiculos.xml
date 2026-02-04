@@ -1,0 +1,104 @@
+<odoo>
+    <data noupdate="1">
+        <record id="veh_1" model="gestion.vehiculo">
+            <field name="modelo">Model S</field>
+            <field name="matricula">0001-ELE</field>
+            <field name="marca_id" ref="marca_demo_10"/>
+        </record>
+        <record id="veh_2" model="gestion.vehiculo">
+            <field name="modelo">911 Carrera</field>
+            <field name="matricula">9110-POR</field>
+            <field name="marca_id" ref="marca_demo_8"/>
+        </record>
+        <record id="veh_3" model="gestion.vehiculo">
+            <field name="modelo">Corolla Hybrid</field>
+            <field name="matricula">2024-TOY</field>
+            <field name="marca_id" ref="marca_demo_14"/>
+        </record>
+        <record id="veh_4" model="gestion.vehiculo">
+            <field name="modelo">F8 Tributo</field>
+            <field name="matricula">0488-FER</field>
+            <field name="marca_id" ref="marca_demo_4"/>
+        </record>
+        <record id="veh_5" model="gestion.vehiculo">
+            <field name="modelo">Civic Type R</field>
+            <field name="matricula">5566-HON</field>
+            <field name="marca_id" ref="marca_demo_15"/>
+        </record>
+        <record id="veh_6" model="gestion.vehiculo">
+            <field name="modelo">A4 Avant</field>
+            <field name="matricula">4400-AUD</field>
+            <field name="marca_id" ref="marca_demo_11"/>
+        </record>
+        <record id="veh_7" model="gestion.vehiculo">
+            <field name="modelo">M4 Competition</field>
+            <field name="matricula">3322-BMW</field>
+            <field name="marca_id" ref="marca_demo_12"/>
+        </record>
+        <record id="veh_8" model="gestion.vehiculo">
+            <field name="modelo">XC90 Recharge</field>
+            <field name="matricula">9090-VOL</field>
+            <field name="marca_id" ref="marca_demo_44"/>
+        </record>
+        <record id="veh_9" model="gestion.vehiculo">
+            <field name="modelo">Ioniq 5</field>
+            <field name="matricula">5500-HYU</field>
+            <field name="marca_id" ref="marca_demo_24"/>
+        </record>
+        <record id="veh_10" model="gestion.vehiculo">
+            <field name="modelo">Land Cruiser</field>
+            <field name="matricula">7788-TOY</field>
+            <field name="marca_id" ref="marca_demo_14"/>
+        </record>
+        <record id="veh_11" model="gestion.vehiculo">
+            <field name="modelo">Taycan Turbo</field>
+            <field name="matricula">1122-POR</field>
+            <field name="marca_id" ref="marca_demo_8"/>
+        </record>
+        <record id="veh_12" model="gestion.vehiculo">
+            <field name="modelo">Aventador</field>
+            <field name="matricula">6666-LAM</field>
+            <field name="marca_id" ref="marca_demo_5"/>
+        </record>
+        <record id="veh_13" model="gestion.vehiculo">
+            <field name="modelo">Mustang Mach-E</field>
+            <field name="matricula">8800-FOR</field>
+            <field name="marca_id" ref="marca_demo_27"/>
+        </record>
+        <record id="veh_14" model="gestion.vehiculo">
+            <field name="modelo">León Cupra</field>
+            <field name="matricula">4747-CUP</field>
+            <field name="marca_id" ref="marca_demo_47"/>
+        </record>
+        <record id="veh_15" model="gestion.vehiculo">
+            <field name="modelo">Range Rover</field>
+            <field name="matricula">5544-LAN</field>
+            <field name="marca_id" ref="marca_demo_54"/>
+        </record>
+        <record id="veh_16" model="gestion.vehiculo">
+            <field name="modelo">Megane E-Tech</field>
+            <field name="matricula">2233-REN</field>
+            <field name="marca_id" ref="marca_demo_38"/>
+        </record>
+        <record id="veh_17" model="gestion.vehiculo">
+            <field name="modelo">EV6 GT</field>
+            <field name="matricula">9900-KIA</field>
+            <field name="marca_id" ref="marca_demo_25"/>
+        </record>
+        <record id="veh_18" model="gestion.vehiculo">
+            <field name="modelo">Daily Van</field>
+            <field name="matricula">3030-IVE</field>
+            <field name="marca_id" ref="marca_demo_79"/>
+        </record>
+        <record id="veh_19" model="gestion.vehiculo">
+            <field name="modelo">Spring Electric</field>
+            <field name="matricula">1010-DAC</field>
+            <field name="marca_id" ref="marca_demo_49"/>
+        </record>
+        <record id="veh_20" model="gestion.vehiculo">
+            <field name="modelo">Model 3</field>
+            <field name="matricula">3333-TES</field>
+            <field name="marca_id" ref="marca_demo_10"/>
+        </record>
+    </data>
+</odoo>

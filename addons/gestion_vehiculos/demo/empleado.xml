@@ -1,0 +1,74 @@
+<odoo>
+    <data noupdate="1">
+        <record id="emp_1" model="hr.employee">
+            <field name="name">Carlos Aranda</field>
+            <field name="vehiculo_id" ref="veh_1" />
+        </record>
+        <record id="emp_2" model="hr.employee">
+            <field name="name">Beatriz Nuñez</field>
+            <field name="vehiculo_id" ref="veh_2" />
+        </record>
+        <record id="emp_3" model="hr.employee">
+            <field name="name">Diego Torres</field>
+            <field name="vehiculo_id" ref="veh_3" />
+        </record>
+        <record id="emp_4" model="hr.employee">
+            <field name="name">Elena Rivas</field>
+            <field name="vehiculo_id" ref="veh_4" />
+        </record>
+        <record id="emp_5" model="hr.employee">
+            <field name="name">Fernando Soler</field>
+            <field name="vehiculo_id" ref="veh_5" />
+        </record>
+        <record id="emp_6" model="hr.employee">
+            <field name="name">Gloria Ortiz</field>
+            <field name="vehiculo_id" ref="veh_6" />
+        </record>
+        <record id="emp_7" model="hr.employee">
+            <field name="name">Hugo Méndez</field>
+            <field name="vehiculo_id" ref="veh_7" />
+        </record>
+        <record id="emp_8" model="hr.employee">
+            <field name="name">Isabel Castro</field>
+            <field name="vehiculo_id" ref="veh_8" />
+        </record>
+        <record id="emp_9" model="hr.employee">
+            <field name="name">Jorge Vidal</field>
+            <field name="vehiculo_id" ref="veh_9" />
+        </record>
+        <record id="emp_10" model="hr.employee">
+            <field name="name">Lucía Blanco</field>
+            <field name="vehiculo_id" ref="veh_10" />
+        </record>
+        <record id="emp_11" model="hr.employee">
+            <field name="name">Marcos Peña</field>
+        </record>
+        <record id="emp_12" model="hr.employee">
+            <field name="name">Natalia Gil</field>
+        </record>
+        <record id="emp_13" model="hr.employee">
+            <field name="name">Oscar León</field>
+        </record>
+        <record id="emp_14" model="hr.employee">
+            <field name="name">Patricia Mora</field>
+        </record>
+        <record id="emp_15" model="hr.employee">
+            <field name="name">Ricardo Sanz</field>
+        </record>
+        <record id="emp_16" model="hr.employee">
+            <field name="name">Sofía Vega</field>
+        </record>
+        <record id="emp_17" model="hr.employee">
+            <field name="name">Tomás Cruz</field>
+        </record>
+        <record id="emp_18" model="hr.employee">
+            <field name="name">Úrsula Sáez</field>
+        </record>
+        <record id="emp_19" model="hr.employee">
+            <field name="name">Víctor Soto</field>
+        </record>
+        <record id="emp_20" model="hr.employee">
+            <field name="name">Yolanda Díaz</field>
+        </record>
+    </data>
+</odoo>

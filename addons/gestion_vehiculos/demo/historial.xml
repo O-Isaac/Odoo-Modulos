@@ -1,0 +1,124 @@
+<odoo>
+    <data noupdate="1">
+        <record id="hist_1" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_1" />
+            <field name="conductor_id" ref="emp_20" />
+            <field name="fecha_inicio">2023-01-01</field>
+            <field name="fecha_fin">2023-06-30</field>
+        </record>
+        <record id="hist_2" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_2" />
+            <field name="conductor_id" ref="emp_19" />
+            <field name="fecha_inicio">2023-02-15</field>
+            <field name="fecha_fin">2023-08-15</field>
+        </record>
+        <record id="hist_3" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_3" />
+            <field name="conductor_id" ref="emp_18" />
+            <field name="fecha_inicio">2023-01-10</field>
+            <field name="fecha_fin">2023-03-10</field>
+        </record>
+        <record id="hist_4" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_4" />
+            <field name="conductor_id" ref="emp_17" />
+            <field name="fecha_inicio">2023-04-01</field>
+            <field name="fecha_fin">2023-05-30</field>
+        </record>
+        <record id="hist_5" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_5" />
+            <field name="conductor_id" ref="emp_16" />
+            <field name="fecha_inicio">2023-06-01</field>
+            <field name="fecha_fin">2023-12-01</field>
+        </record>
+        <record id="hist_6" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_6" />
+            <field name="conductor_id" ref="emp_15" />
+            <field name="fecha_inicio">2023-03-20</field>
+            <field name="fecha_fin">2023-09-20</field>
+        </record>
+        <record id="hist_7" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_7" />
+            <field name="conductor_id" ref="emp_14" />
+            <field name="fecha_inicio">2023-05-05</field>
+            <field name="fecha_fin">2023-11-05</field>
+        </record>
+        <record id="hist_8" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_8" />
+            <field name="conductor_id" ref="emp_13" />
+            <field name="fecha_inicio">2023-01-15</field>
+            <field name="fecha_fin">2023-04-15</field>
+        </record>
+        <record id="hist_9" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_9" />
+            <field name="conductor_id" ref="emp_12" />
+            <field name="fecha_inicio">2023-07-01</field>
+            <field name="fecha_fin">2023-10-01</field>
+        </record>
+        <record id="hist_10" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_10" />
+            <field name="conductor_id" ref="emp_11" />
+            <field name="fecha_inicio">2023-08-10</field>
+            <field name="fecha_fin">2023-12-31</field>
+        </record>
+        <record id="hist_11" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_11" />
+            <field name="conductor_id" ref="emp_10" />
+            <field name="fecha_inicio">2023-02-01</field>
+            <field name="fecha_fin">2023-04-01</field>
+        </record>
+        <record id="hist_12" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_12" />
+            <field name="conductor_id" ref="emp_9" />
+            <field name="fecha_inicio">2023-01-01</field>
+            <field name="fecha_fin">2023-02-28</field>
+        </record>
+        <record id="hist_13" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_13" />
+            <field name="conductor_id" ref="emp_8" />
+            <field name="fecha_inicio">2023-03-15</field>
+            <field name="fecha_fin">2023-05-15</field>
+        </record>
+        <record id="hist_14" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_14" />
+            <field name="conductor_id" ref="emp_7" />
+            <field name="fecha_inicio">2023-06-10</field>
+            <field name="fecha_fin">2023-08-10</field>
+        </record>
+        <record id="hist_15" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_15" />
+            <field name="conductor_id" ref="emp_6" />
+            <field name="fecha_inicio">2023-09-01</field>
+            <field name="fecha_fin">2023-11-30</field>
+        </record>
+        <record id="hist_16" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_16" />
+            <field name="conductor_id" ref="emp_5" />
+            <field name="fecha_inicio">2023-01-20</field>
+            <field name="fecha_fin">2023-03-20</field>
+        </record>
+        <record id="hist_17" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_17" />
+            <field name="conductor_id" ref="emp_4" />
+            <field name="fecha_inicio">2023-04-10</field>
+            <field name="fecha_fin">2023-06-10</field>
+        </record>
+        <record id="hist_18" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_18" />
+            <field name="conductor_id" ref="emp_3" />
+            <field name="fecha_inicio">2023-07-15</field>
+            <field name="fecha_fin">2023-09-15</field>
+        </record>
+        <record id="hist_19" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_19" />
+            <field name="conductor_id" ref="emp_2" />
+            <field name="fecha_inicio">2023-10-01</field>
+            <field name="fecha_fin">2023-12-01</field>
+        </record>
+        <record id="hist_20" model="gestion.historial.vehiculo">
+            <field name="vehiculo_id" ref="veh_20" />
+            <field name="conductor_id" ref="emp_1" />
+            <field name="fecha_inicio">2023-01-01</field>
+            <field name="fecha_fin">2023-12-31</field>
+        </record>
+    </data>
+</odoo>
