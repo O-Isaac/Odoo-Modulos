@@ -1,0 +1,65 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === Odoo Específico ===
+*.log
+/filestore/
+/sessions/
+*.conf
+!/odoo.conf.example
+
+# === Entorno Virtual ===
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# === IDEs y Editores ===
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+
+# === OS Archivos Temporales ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === Cobertura y Tests ===
+.target/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Configuracion de odoo
+odoo.conf
