@@ -9,10 +9,11 @@
                 <page string="Vehículo">
                     <group>
                         <field name="vehiculo_id"/> 
+                        <field name="tiene_multas" invisible="1"/>
                     </group>
                 </page>
 
-                <page string="Multas">
+                <page string="Multas" invisible="not tiene_multas">
                     <field name="multa_ids">
                         <list editable="bottom">
                             <field name="fecha"/>

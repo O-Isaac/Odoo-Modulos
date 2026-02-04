@@ -99,4 +99,11 @@
             </search>
         </field>
     </record>
+
+    <!-- Acción para Marcas -->
+    <record id="action_gestion_marcas" model="ir.actions.act_window">
+        <field name="name">Marcas</field>
+        <field name="res_model">gestion.marca</field>
+        <field name="view_mode">kanban,list,form</field>
+    </record>
 </odoo>

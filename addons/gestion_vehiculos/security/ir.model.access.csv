@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_gestion_marca_user,gestion.marca.user,model_gestion_marca,base.group_user,1,1,1,1
 access_gestion_vehiculo_user,gestion.vehiculo.user,model_gestion_vehiculo,base.group_user,1,1,1,1
 access_gestion_multa_user,gestion.multa.user,model_gestion_multa,base.group_user,1,1,1,1
+access_gestion_historial_vehiculo_user,gestion.historial.vehiculo.user,model_gestion_historial_vehiculo,base.group_user,1,1,1,1

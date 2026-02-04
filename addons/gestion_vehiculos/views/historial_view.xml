@@ -1,0 +1,109 @@
+<odoo>
+    <!-- Vista de formulario para Historial de Vehículos -->
+    <record id="view_gestion_historial_vehiculo_form" model="ir.ui.view">
+        <field name="name">gestion.historial.vehiculo.form</field>
+        <field name="model">gestion.historial.vehiculo</field>
+        <field name="arch" type="xml">
+            <form create="false" edit="false">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="conductor_id" widget="many2one_avatar_user"/>
+                            <field name="vehiculo_id"/>
+                        </group>
+                        <group>
+                            <field name="fecha_inicio"/>
+                            <field name="fecha_fin"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista de lista (tree) para Historial de Vehículos -->
+    <record id="view_gestion_historial_vehiculo_tree" model="ir.ui.view">
+        <field name="name">gestion.historial.vehiculo.tree</field>
+        <field name="model">gestion.historial.vehiculo</field>
+        <field name="arch" type="xml">
+            <list create="false" edit="false" decoration-info="not fecha_fin" expand="1" default_order="fecha_inicio desc">
+                <field name="vehiculo_id" column_invisible="True"/>
+                <field name="fecha_inicio" widget="date"/>
+                <field name="fecha_fin" widget="date"/>
+                <field name="conductor_id" widget="many2one_avatar_user"/>
+                <field name="fecha_inicio" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Vista de Calendario para Historial -->
+    <record id="view_gestion_historial_vehiculo_calendar" model="ir.ui.view">
+        <field name="name">gestion.historial.vehiculo.calendar</field>
+        <field name="model">gestion.historial.vehiculo</field>
+        <field name="arch" type="xml">
+            <calendar string="Asignaciones" 
+                      date_start="fecha_inicio" 
+                      date_stop="fecha_fin_visual" 
+                      color="vehiculo_id"
+                      mode="year"
+                      scales="day,week,month,year"
+                      create="false" edit="false"
+                      >
+                <field name="conductor_id"/>
+                <field name="vehiculo_id"/>
+            </calendar>
+        </field>
+    </record>
+
+    <!-- Vista Pivot para Historial (Análisis Semanal/Anual) -->
+    <record id="view_gestion_historial_vehiculo_pivot" model="ir.ui.view">
+        <field name="name">gestion.historial.vehiculo.pivot</field>
+        <field name="model">gestion.historial.vehiculo</field>
+        <field name="arch" type="xml">
+            <pivot string="Análisis de Asignaciones">
+                <field name="conductor_id" type="row"/>
+                <field name="fecha_inicio" interval="year" type="col"/>
+                <field name="fecha_inicio" interval="month" type="col"/>
+                <field name="fecha_inicio" interval="day" type="col"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Vista de Búsqueda para Historial -->
+    <record id="view_gestion_historial_vehiculo_search" model="ir.ui.view">
+        <field name="name">gestion.historial.vehiculo.search</field>
+        <field name="model">gestion.historial.vehiculo</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="conductor_id"/>
+                <field name="vehiculo_id"/>
+                <separator/>
+                <filter string="Activos" name="activos" domain="[('fecha_fin', '=', False)]"/>
+                <filter string="Finalizados" name="finalizados" domain="[('fecha_fin', '!=', False)]"/>
+                <filter string="Vehículo" name="group_by_vehiculo" context="{'group_by': 'vehiculo_id'}"/>
+                <filter string="Año" name="group_by_year" context="{'group_by': 'fecha_inicio:year'}"/>
+                <filter string="Mes" name="group_by_month" context="{'group_by': 'fecha_inicio:month'}"/>
+                <filter string="Conductor" name="group_by_conductor" context="{'group_by': 'conductor_id'}"/>
+                
+                <searchpanel view_types="list,calendar,pivot">
+                    <field name="vehiculo_id" icon="fa-car" select="multi" enable_counters="1"/>
+                    <field name="conductor_id" icon="fa-users" select="multi" enable_counters="1"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <!-- Acción para Historial -->
+    <record id="action_gestion_historial_vehiculo" model="ir.actions.act_window">
+        <field name="name">Historial de Uso</field>
+        <field name="res_model">gestion.historial.vehiculo</field>
+        <field name="view_mode">list,form,calendar,pivot</field>
+        <field name="search_view_id" ref="view_gestion_historial_vehiculo_search"/>
+        <field name="context">{'search_default_activos': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No hay registros de uso todavía.
+            </p>
+        </field>
+    </record>
+</odoo>
