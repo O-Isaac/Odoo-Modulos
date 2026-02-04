@@ -1,0 +1,102 @@
+<odoo>
+    <!-- Vista de formulario para Marca -->
+    <record id="view_gestion_marca_form" model="ir.ui.view">
+        <field name="name">gestion.marca.form</field>
+        <field name="model">gestion.marca</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="logo" widget="image" class="oe_avatar"/>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" placeholder="Nombre de la marca..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="pais_origen"/>
+                            <field name="vehiculo_count"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Descripción">
+                            <field name="descripcion" placeholder="Descripción de la marca..."/>
+                        </page>
+                        <page string="Vehículos">
+                            <field name="vehiculo_ids">
+                                <list>
+                                    <field name="matricula"/>
+                                    <field name="modelo"/>
+                                    <field name="kilometros"/>
+                                    <field name="conductor_id"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista de lista para Marca -->
+    <record id="view_gestion_marca_tree" model="ir.ui.view">
+        <field name="name">gestion.marca.tree</field>
+        <field name="model">gestion.marca</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="pais_origen"/>
+                <field name="vehiculo_count"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Vista kanban para Marca -->
+    <record id="view_gestion_marca_kanban" model="ir.ui.view">
+        <field name="name">gestion.marca.kanban</field>
+        <field name="model">gestion.marca</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="name"/>
+                <field name="pais_origen"/>
+                <field name="vehiculo_count"/>
+                <field name="logo"/>
+                <templates>
+                    <t t-name="card">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_image">
+                                <img t-att-src="'/web/image/gestion.marca/' + record.id.raw_value + '/logo'" alt="Logo" class="o_image_64_cover"/>
+                            </div>
+                            <div class="oe_kanban_details">
+                                <strong class="o_kanban_record_title">
+                                    <field name="name"/>
+                                </strong>
+                                <div t-if="record.pais_origen.raw_value">
+                                    <field name="pais_origen"/>
+                                </div>
+                                <div>
+                                    <t t-esc="record.vehiculo_count.raw_value"/> vehículos
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Vista de búsqueda para Marca -->
+    <record id="view_gestion_marca_search" model="ir.ui.view">
+        <field name="name">gestion.marca.search</field>
+        <field name="model">gestion.marca</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="pais_origen"/>
+                <filter string="Agrupar por País" name="group_by_pais" context="{'group_by':'pais_origen'}"/>
+            </search>
+        </field>
+    </record>
+</odoo>

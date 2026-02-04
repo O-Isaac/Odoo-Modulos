@@ -1,0 +1,34 @@
+<odoo>
+    <!-- Acción para Vehículos -->
+    <record id="action_gestion_vehiculos" model="ir.actions.act_window">
+        <field name="name">Vehículos</field>
+        <field name="res_model">gestion.vehiculo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Acción para Marcas -->
+    <record id="action_gestion_marcas" model="ir.actions.act_window">
+        <field name="name">Marcas</field>
+        <field name="res_model">gestion.marca</field>
+        <field name="view_mode">kanban,list,form</field>
+    </record>
+
+    <!-- Acción para Multas -->
+    <record id="action_gestion_multas" model="ir.actions.act_window">
+        <field name="name">Multas</field>
+        <field name="res_model">gestion.multa</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menú principal -->
+    <menuitem id="menu_gestion_root" name="Gestión Vehículos" sequence="10"/>
+    
+    <!-- Categoría Flota -->
+    <menuitem id="menu_gestion_flota_cat" name="Flota" parent="menu_gestion_root" sequence="10"/>
+    <menuitem id="menu_gestion_vehiculo_list" name="Vehículos" parent="menu_gestion_flota_cat" action="action_gestion_vehiculos" sequence="1"/>
+    <menuitem id="menu_gestion_marca_list" name="Marcas" parent="menu_gestion_flota_cat" action="action_gestion_marcas" sequence="2"/>
+
+    <!-- Categoría Incidencias -->
+    <menuitem id="menu_gestion_incidencias_cat" name="Incidencias" parent="menu_gestion_root" sequence="20"/>
+    <menuitem id="menu_gestion_multa_list" name="Multas" parent="menu_gestion_incidencias_cat" action="action_gestion_multas" sequence="1"/>
+</odoo>

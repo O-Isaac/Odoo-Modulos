@@ -1,0 +1,32 @@
+<odoo>
+    <record id="view_gestion_vehiculo_form" model="ir.ui.view">
+        <field name="name">gestion.vehiculo.form</field>
+        <field name="model">gestion.vehiculo</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="matricula"/>
+                        <field name="marca_id"/>
+                        <field name="modelo"/>
+                        <field name="kilometros"/>
+                        <field name="conductor_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_gestion_vehiculo_tree" model="ir.ui.view">
+        <field name="name">gestion.vehiculo.tree</field>
+        <field name="model">gestion.vehiculo</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="matricula"/>
+                <field name="marca_id"/>
+                <field name="modelo"/>
+                <field name="conductor_id"/>
+            </list>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,612 @@
+<odoo>
+    <record id="marca_demo_1" model="gestion.marca">
+        <field name="name">Aston Martin</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de automóviles deportivos de lujo</field>
+    </record>
+    
+    <record id="marca_demo_2" model="gestion.marca">
+        <field name="name">Bentley</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante de automóviles de lujo ultra premium</field>
+    </record>
+    
+    <record id="marca_demo_3" model="gestion.marca">
+        <field name="name">Bugatti</field>
+        <field name="pais_origen">Francia</field>
+        <field name="descripcion">Fabricante de hipercoches de alto rendimiento</field>
+    </record>
+    
+    <record id="marca_demo_4" model="gestion.marca">
+        <field name="name">Ferrari</field>
+        <field name="pais_origen">Italia</field>
+        <field name="descripcion">Fabricante italiano de automóviles deportivos de lujo</field>
+    </record>
+    
+    <record id="marca_demo_5" model="gestion.marca">
+        <field name="name">Lamborghini</field>
+        <field name="pais_origen">Italia</field>
+        <field name="descripcion">Fabricante italiano de superdeportivos</field>
+    </record>
+    
+    <record id="marca_demo_6" model="gestion.marca">
+        <field name="name">Maserati</field>
+        <field name="pais_origen">Italia</field>
+        <field name="descripcion">Fabricante italiano de vehículos deportivos de lujo</field>
+    </record>
+    
+    <record id="marca_demo_7" model="gestion.marca">
+        <field name="name">McLaren</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de superdeportivos</field>
+    </record>
+    
+    <record id="marca_demo_8" model="gestion.marca">
+        <field name="name">Porsche</field>
+        <field name="pais_origen">Alemania</field>
+        <field name="descripcion">Fabricante alemán de automóviles deportivos de lujo</field>
+    </record>
+    
+    <record id="marca_demo_9" model="gestion.marca">
+        <field name="name">Rolls-Royce</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de automóviles de ultra lujo</field>
+    </record>
+    
+    <record id="marca_demo_10" model="gestion.marca">
+        <field name="name">Tesla</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">Fabricante estadounidense de vehículos eléctricos premium</field>
+    </record>
+    
+    <!-- Marcas Premium alemanas -->
+    <record id="marca_demo_11" model="gestion.marca">
+        <field name="name">Audi</field>
+        <field name="pais_origen">Alemania</field>
+        <field name="descripcion">Fabricante alemán de automóviles premium</field>
+    </record>
+    
+    <record id="marca_demo_12" model="gestion.marca">
+        <field name="name">BMW</field>
+        <field name="pais_origen">Alemania</field>
+        <field name="descripcion">Fabricante alemán de automóviles premium y motocicletas</field>
+    </record>
+    
+    <record id="marca_demo_13" model="gestion.marca">
+        <field name="name">Mercedes-Benz</field>
+        <field name="pais_origen">Alemania</field>
+        <field name="descripcion">Fabricante alemán de automóviles de lujo</field>
+    </record>
+    
+    <!-- Marcas japonesas -->
+    <record id="marca_demo_14" model="gestion.marca">
+        <field name="name">Toyota</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">Fabricante japonés líder mundial en automóviles</field>
+    </record>
+    
+    <record id="marca_demo_15" model="gestion.marca">
+        <field name="name">Honda</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">Fabricante japonés de automóviles y motocicletas</field>
+    </record>
+    
+    <record id="marca_demo_16" model="gestion.marca">
+        <field name="name">Nissan</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">Fabricante japonés de automóviles y vehículos comerciales</field>
+    </record>
+    
+    <record id="marca_demo_17" model="gestion.marca">
+        <field name="name">Mazda</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">Fabricante japonés de automóviles deportivos y compactos</field>
+    </record>
+    
+    <record id="marca_demo_18" model="gestion.marca">
+        <field name="name">Subaru</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">Fabricante japonés especializado en tracción total</field>
+    </record>
+    
+    <record id="marca_demo_19" model="gestion.marca">
+        <field name="name">Mitsubishi</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">Fabricante japonés de automóviles y vehículos comerciales</field>
+    </record>
+    
+    <record id="marca_demo_20" model="gestion.marca">
+        <field name="name">Suzuki</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">Fabricante japonés de automóviles compactos y motocicletas</field>
+    </record>
+    
+    <record id="marca_demo_21" model="gestion.marca">
+        <field name="name">Lexus</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">División de lujo de Toyota</field>
+    </record>
+    
+    <record id="marca_demo_22" model="gestion.marca">
+        <field name="name">Infiniti</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">División de lujo de Nissan</field>
+    </record>
+    
+    <record id="marca_demo_23" model="gestion.marca">
+        <field name="name">Acura</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">División de lujo de Honda</field>
+    </record>
+    
+    <!-- Marcas coreanas -->
+    <record id="marca_demo_24" model="gestion.marca">
+        <field name="name">Hyundai</field>
+        <field name="pais_origen">Corea del Sur</field>
+        <field name="descripcion">Fabricante surcoreano de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_25" model="gestion.marca">
+        <field name="name">Kia</field>
+        <field name="pais_origen">Corea del Sur</field>
+        <field name="descripcion">Fabricante surcoreano de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_26" model="gestion.marca">
+        <field name="name">Genesis</field>
+        <field name="pais_origen">Corea del Sur</field>
+        <field name="descripcion">División de lujo de Hyundai</field>
+    </record>
+    
+    <!-- Marcas estadounidenses -->
+    <record id="marca_demo_27" model="gestion.marca">
+        <field name="name">Ford</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">Fabricante estadounidense de automóviles y camiones</field>
+    </record>
+    
+    <record id="marca_demo_28" model="gestion.marca">
+        <field name="name">Chevrolet</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">División de General Motors</field>
+    </record>
+    
+    <record id="marca_demo_29" model="gestion.marca">
+        <field name="name">Dodge</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">Fabricante estadounidense de vehículos de alto rendimiento</field>
+    </record>
+    
+    <record id="marca_demo_30" model="gestion.marca">
+        <field name="name">Jeep</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">Fabricante estadounidense de SUV y vehículos todoterreno</field>
+    </record>
+    
+    <record id="marca_demo_31" model="gestion.marca">
+        <field name="name">Chrysler</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">Fabricante estadounidense de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_32" model="gestion.marca">
+        <field name="name">Cadillac</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">División de lujo de General Motors</field>
+    </record>
+    
+    <record id="marca_demo_33" model="gestion.marca">
+        <field name="name">Lincoln</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">División de lujo de Ford</field>
+    </record>
+    
+    <record id="marca_demo_34" model="gestion.marca">
+        <field name="name">Buick</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">División premium de General Motors</field>
+    </record>
+    
+    <record id="marca_demo_35" model="gestion.marca">
+        <field name="name">GMC</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">División de camiones y SUV de General Motors</field>
+    </record>
+    
+    <record id="marca_demo_36" model="gestion.marca">
+        <field name="name">Ram</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">División de camionetas pickup</field>
+    </record>
+    
+    <!-- Marcas europeas -->
+    <record id="marca_demo_37" model="gestion.marca">
+        <field name="name">Volkswagen</field>
+        <field name="pais_origen">Alemania</field>
+        <field name="descripcion">Fabricante alemán de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_38" model="gestion.marca">
+        <field name="name">Renault</field>
+        <field name="pais_origen">Francia</field>
+        <field name="descripcion">Fabricante francés de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_39" model="gestion.marca">
+        <field name="name">Peugeot</field>
+        <field name="pais_origen">Francia</field>
+        <field name="descripcion">Fabricante francés de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_40" model="gestion.marca">
+        <field name="name">Citroën</field>
+        <field name="pais_origen">Francia</field>
+        <field name="descripcion">Fabricante francés de automóviles innovadores</field>
+    </record>
+    
+    <record id="marca_demo_41" model="gestion.marca">
+        <field name="name">Fiat</field>
+        <field name="pais_origen">Italia</field>
+        <field name="descripcion">Fabricante italiano de automóviles compactos</field>
+    </record>
+    
+    <record id="marca_demo_42" model="gestion.marca">
+        <field name="name">Alfa Romeo</field>
+        <field name="pais_origen">Italia</field>
+        <field name="descripcion">Fabricante italiano de automóviles deportivos</field>
+    </record>
+    
+    <record id="marca_demo_43" model="gestion.marca">
+        <field name="name">Lancia</field>
+        <field name="pais_origen">Italia</field>
+        <field name="descripcion">Fabricante italiano de automóviles premium</field>
+    </record>
+    
+    <record id="marca_demo_44" model="gestion.marca">
+        <field name="name">Volvo</field>
+        <field name="pais_origen">Suecia</field>
+        <field name="descripcion">Fabricante sueco especializado en seguridad</field>
+    </record>
+    
+    <record id="marca_demo_45" model="gestion.marca">
+        <field name="name">Saab</field>
+        <field name="pais_origen">Suecia</field>
+        <field name="descripcion">Fabricante sueco de automóviles premium</field>
+    </record>
+    
+    <record id="marca_demo_46" model="gestion.marca">
+        <field name="name">SEAT</field>
+        <field name="pais_origen">España</field>
+        <field name="descripcion">Fabricante español de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_47" model="gestion.marca">
+        <field name="name">CUPRA</field>
+        <field name="pais_origen">España</field>
+        <field name="descripcion">División deportiva de SEAT</field>
+    </record>
+    
+    <record id="marca_demo_48" model="gestion.marca">
+        <field name="name">Škoda</field>
+        <field name="pais_origen">República Checa</field>
+        <field name="descripcion">Fabricante checo de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_49" model="gestion.marca">
+        <field name="name">Dacia</field>
+        <field name="pais_origen">Rumania</field>
+        <field name="descripcion">Fabricante rumano de automóviles económicos</field>
+    </record>
+    
+    <record id="marca_demo_50" model="gestion.marca">
+        <field name="name">Opel</field>
+        <field name="pais_origen">Alemania</field>
+        <field name="descripcion">Fabricante alemán de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_51" model="gestion.marca">
+        <field name="name">Vauxhall</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_52" model="gestion.marca">
+        <field name="name">Mini</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de automóviles compactos premium</field>
+    </record>
+    
+    <record id="marca_demo_53" model="gestion.marca">
+        <field name="name">Jaguar</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de automóviles de lujo</field>
+    </record>
+    
+    <record id="marca_demo_54" model="gestion.marca">
+        <field name="name">Land Rover</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de SUV de lujo</field>
+    </record>
+    
+    <record id="marca_demo_55" model="gestion.marca">
+        <field name="name">Lotus</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de deportivos ligeros</field>
+    </record>
+    
+    <record id="marca_demo_56" model="gestion.marca">
+        <field name="name">Smart</field>
+        <field name="pais_origen">Alemania</field>
+        <field name="descripcion">Fabricante alemán de microcoches urbanos</field>
+    </record>
+    
+    <!-- Marcas chinas -->
+    <record id="marca_demo_57" model="gestion.marca">
+        <field name="name">BYD</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de vehículos eléctricos</field>
+    </record>
+    
+    <record id="marca_demo_58" model="gestion.marca">
+        <field name="name">Geely</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_59" model="gestion.marca">
+        <field name="name">NIO</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de vehículos eléctricos premium</field>
+    </record>
+    
+    <record id="marca_demo_60" model="gestion.marca">
+        <field name="name">XPeng</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de vehículos eléctricos inteligentes</field>
+    </record>
+    
+    <record id="marca_demo_61" model="gestion.marca">
+        <field name="name">Li Auto</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de vehículos eléctricos híbridos</field>
+    </record>
+    
+    <record id="marca_demo_62" model="gestion.marca">
+        <field name="name">Great Wall</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de SUV y pickups</field>
+    </record>
+    
+    <record id="marca_demo_63" model="gestion.marca">
+        <field name="name">MG</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Marca británica propiedad china</field>
+    </record>
+    
+    <record id="marca_demo_64" model="gestion.marca">
+        <field name="name">Chery</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_65" model="gestion.marca">
+        <field name="name">Hongqi</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de automóviles de lujo</field>
+    </record>
+    
+    <record id="marca_demo_66" model="gestion.marca">
+        <field name="name">JAC</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de automóviles y comerciales</field>
+    </record>
+    
+    <!-- Marcas eléctricas y emergentes -->
+    <record id="marca_demo_67" model="gestion.marca">
+        <field name="name">Rivian</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">Fabricante estadounidense de pickups y SUV eléctricos</field>
+    </record>
+    
+    <record id="marca_demo_68" model="gestion.marca">
+        <field name="name">Lucid Motors</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">Fabricante estadounidense de sedanes eléctricos de lujo</field>
+    </record>
+    
+    <record id="marca_demo_69" model="gestion.marca">
+        <field name="name">Polestar</field>
+        <field name="pais_origen">Suecia</field>
+        <field name="descripcion">División eléctrica premium de Volvo</field>
+    </record>
+    
+    <record id="marca_demo_70" model="gestion.marca">
+        <field name="name">Fisker</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">Fabricante estadounidense de vehículos eléctricos</field>
+    </record>
+    
+    <!-- Marcas deportivas y especializadas -->
+    <record id="marca_demo_71" model="gestion.marca">
+        <field name="name">Koenigsegg</field>
+        <field name="pais_origen">Suecia</field>
+        <field name="descripcion">Fabricante sueco de hipercoches</field>
+    </record>
+    
+    <record id="marca_demo_72" model="gestion.marca">
+        <field name="name">Pagani</field>
+        <field name="pais_origen">Italia</field>
+        <field name="descripcion">Fabricante italiano de hipercoches artesanales</field>
+    </record>
+    
+    <record id="marca_demo_73" model="gestion.marca">
+        <field name="name">Spyker</field>
+        <field name="pais_origen">Países Bajos</field>
+        <field name="descripcion">Fabricante holandés de superdeportivos</field>
+    </record>
+    
+    <record id="marca_demo_74" model="gestion.marca">
+        <field name="name">TVR</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de deportivos</field>
+    </record>
+    
+    <record id="marca_demo_75" model="gestion.marca">
+        <field name="name">Morgan</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de deportivos clásicos</field>
+    </record>
+    
+    <record id="marca_demo_76" model="gestion.marca">
+        <field name="name">Caterham</field>
+        <field name="pais_origen">Reino Unido</field>
+        <field name="descripcion">Fabricante británico de deportivos ligeros</field>
+    </record>
+    
+    <record id="marca_demo_77" model="gestion.marca">
+        <field name="name">Alpine</field>
+        <field name="pais_origen">Francia</field>
+        <field name="descripcion">Fabricante francés de deportivos</field>
+    </record>
+    
+    <record id="marca_demo_78" model="gestion.marca">
+        <field name="name">DS Automobiles</field>
+        <field name="pais_origen">Francia</field>
+        <field name="descripcion">División premium de PSA Groupe</field>
+    </record>
+    
+    <!-- Marcas de vehículos comerciales -->
+    <record id="marca_demo_79" model="gestion.marca">
+        <field name="name">Iveco</field>
+        <field name="pais_origen">Italia</field>
+        <field name="descripcion">Fabricante italiano de vehículos comerciales</field>
+    </record>
+    
+    <record id="marca_demo_80" model="gestion.marca">
+        <field name="name">MAN</field>
+        <field name="pais_origen">Alemania</field>
+        <field name="descripcion">Fabricante alemán de camiones y autobuses</field>
+    </record>
+    
+    <record id="marca_demo_81" model="gestion.marca">
+        <field name="name">Scania</field>
+        <field name="pais_origen">Suecia</field>
+        <field name="descripcion">Fabricante sueco de camiones pesados</field>
+    </record>
+    
+    <record id="marca_demo_82" model="gestion.marca">
+        <field name="name">DAF</field>
+        <field name="pais_origen">Países Bajos</field>
+        <field name="descripcion">Fabricante holandés de camiones</field>
+    </record>
+    
+    <!-- Marcas históricas y adicionales -->
+    <record id="marca_demo_83" model="gestion.marca">
+        <field name="name">Maybach</field>
+        <field name="pais_origen">Alemania</field>
+        <field name="descripcion">Marca de ultra lujo de Mercedes-Benz</field>
+    </record>
+    
+    <record id="marca_demo_84" model="gestion.marca">
+        <field name="name">Hummer</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">Fabricante de SUV de gran tamaño</field>
+    </record>
+    
+    <record id="marca_demo_85" model="gestion.marca">
+        <field name="name">Isuzu</field>
+        <field name="pais_origen">Japón</field>
+        <field name="descripcion">Fabricante japonés de vehículos comerciales</field>
+    </record>
+    
+    <record id="marca_demo_86" model="gestion.marca">
+        <field name="name">Ssangyong</field>
+        <field name="pais_origen">Corea del Sur</field>
+        <field name="descripcion">Fabricante surcoreano de SUV</field>
+    </record>
+    
+    <record id="marca_demo_87" model="gestion.marca">
+        <field name="name">Mahindra</field>
+        <field name="pais_origen">India</field>
+        <field name="descripcion">Fabricante indio de vehículos todoterreno</field>
+    </record>
+    
+    <record id="marca_demo_88" model="gestion.marca">
+        <field name="name">Tata Motors</field>
+        <field name="pais_origen">India</field>
+        <field name="descripcion">Fabricante indio de automóviles y comerciales</field>
+    </record>
+    
+    <record id="marca_demo_89" model="gestion.marca">
+        <field name="name">Proton</field>
+        <field name="pais_origen">Malasia</field>
+        <field name="descripcion">Fabricante malasio de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_90" model="gestion.marca">
+        <field name="name">Perodua</field>
+        <field name="pais_origen">Malasia</field>
+        <field name="descripcion">Fabricante malasio de automóviles compactos</field>
+    </record>
+    
+    <record id="marca_demo_91" model="gestion.marca">
+        <field name="name">Holden</field>
+        <field name="pais_origen">Australia</field>
+        <field name="descripcion">Fabricante australiano de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_92" model="gestion.marca">
+        <field name="name">Haval</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">División SUV de Great Wall</field>
+    </record>
+    
+    <record id="marca_demo_93" model="gestion.marca">
+        <field name="name">Lynk &amp; Co</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Marca china-sueca de Geely y Volvo</field>
+    </record>
+    
+    <record id="marca_demo_94" model="gestion.marca">
+        <field name="name">Wuling</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de vehículos pequeños</field>
+    </record>
+    
+    <record id="marca_demo_95" model="gestion.marca">
+        <field name="name">GAC</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de automóviles</field>
+    </record>
+    
+    <record id="marca_demo_96" model="gestion.marca">
+        <field name="name">Borgward</field>
+        <field name="pais_origen">Alemania</field>
+        <field name="descripcion">Fabricante alemán histórico revivido</field>
+    </record>
+    
+    <record id="marca_demo_97" model="gestion.marca">
+        <field name="name">Karma</field>
+        <field name="pais_origen">Estados Unidos</field>
+        <field name="descripcion">Fabricante estadounidense de vehículos eléctricos de lujo</field>
+    </record>
+    
+    <record id="marca_demo_98" model="gestion.marca">
+        <field name="name">Aiways</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de SUV eléctricos</field>
+    </record>
+    
+    <record id="marca_demo_99" model="gestion.marca">
+        <field name="name">Byton</field>
+        <field name="pais_origen">China</field>
+        <field name="descripcion">Fabricante chino de vehículos eléctricos premium</field>
+    </record>
+    
+    <record id="marca_demo_100" model="gestion.marca">
+        <field name="name">Rimac</field>
+        <field name="pais_origen">Croacia</field>
+        <field name="descripcion">Fabricante croata de hipercoches eléctricos</field>
+    </record>
+
+</odoo>

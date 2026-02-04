@@ -1,0 +1,33 @@
+<odoo>
+    <record id="view_employee_form_inherit_vehiculos" model="ir.ui.view">
+        <field name="name">hr.employee.form.inherit.vehiculos</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <!-- Añadir pestañas en el notebook -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Vehículo">
+                    <group>
+                        <field name="vehiculo_id"/> 
+                    </group>
+                </page>
+
+                <page string="Multas">
+                    <field name="multa_ids">
+                        <list editable="bottom">
+                            <field name="fecha"/>
+                            <field name="name"/>
+                            <field name="importe"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+
+            <!-- Añadir campo vehiculo_id en la sección de información laboral -->
+            <xpath expr="//field[@name='department_id']" position="after">
+                <field name="vehiculo_id" placeholder="Asignar coche..."/>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>
