@@ -60,3 +60,6 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
+
+# Configuracion de odoo
+odoo.conf
