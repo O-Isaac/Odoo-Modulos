@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Acción del Reporte -->
+        <record id="action_report_multa" model="ir.actions.report">
+            <field name="name">Detalle de Multa</field>
+            <field name="model">gestion.multa</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">gestion_vehiculos.report_multa_document</field>
+            <field name="report_file">gestion_vehiculos.report_multa_document</field>
+            <field name="print_report_name">'Multa - %s' % (object.name)</field>
+            <field name="binding_model_id" ref="model_gestion_multa"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <!-- Template del documento -->
+        <template id="report_multa_document">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2 class="text-center mt32 mb32">Información de Multa</h2>
+                            
+                            <!-- Información Principal -->
+                            <div class="row mt32 mb32" id="information">
+                                <div class="col-6">
+                                    <strong>Infracción:</strong> <span t-field="o.name"/>
+                                </div>
+                                <div class="col-6">
+                                    <strong>Estado:</strong> 
+                                    <span t-field="o.state"/>
+                                </div>
+                            </div>
+
+                            <div class="row mt32 mb32">
+                                <div class="col-6">
+                                    <strong>Fecha:</strong> <span t-field="o.fecha"/>
+                                </div>
+                                <div class="col-6">
+                                    <strong>Importe:</strong> <span t-field="o.importe" t-options='{"widget": "monetary", "display_currency": o.env.company.currency_id}'/>
+                                </div>
+                            </div>
+
+                            <!-- Información Conductor/Empleado -->
+                            <div class="row mt32 mb32">
+                                <div class="col-12">
+                                    <h3>Datos del Conductor</h3>
+                                    <hr/>
+                                    <strong>Nombre:</strong> <span t-field="o.empleado_id.name"/><br/>
+                                    <strong>Email:</strong> <span t-if="o.empleado_id.work_email" t-field="o.empleado_id.work_email"/> <span t-else="">-</span><br/>
+                                </div>
+                            </div>
+
+                            <!-- Información Vehículo (Si aplica) -->
+                            <div class="row mt32 mb32" t-if="o.vehiculo_id">
+                                <div class="col-12">
+                                    <h3>Vehículo Implicado</h3>
+                                    <hr/>
+                                    <strong>Matrícula:</strong> <span t-field="o.vehiculo_id.matricula"/><br/>
+                                    <strong>Modelo:</strong> <span t-field="o.vehiculo_id.modelo"/><br/>
+                                    <strong>Marca:</strong> <span t-field="o.vehiculo_id.marca_id.name"/><br/>
+                                </div>
+                            </div>
+                            
+                            <!-- Notas -->
+                            <div class="row mt32" t-if="o.descripcion">
+                                <div class="col-12">
+                                    <strong>Notas Adicionales:</strong><br/>
+                                    <span t-field="o.descripcion"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
