@@ -11,4 +11,8 @@
     <!-- Categoría Incidencias -->
     <menuitem id="menu_gestion_incidencias_cat" name="Incidencias" parent="menu_gestion_root" sequence="20"/>
     <menuitem id="menu_gestion_multa_list" name="Multas" parent="menu_gestion_incidencias_cat" action="action_gestion_multa" sequence="1"/>
+
+    <!-- Categoría Informes -->
+    <menuitem id="menu_gestion_report_cat" name="Informes" parent="menu_gestion_root" sequence="30"/>
+    <menuitem id="menu_report_multa_list_total" name="Listado Total Multas" parent="menu_gestion_report_cat" action="action_report_multa_list" sequence="1"/>
 </odoo>

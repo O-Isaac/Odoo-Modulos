@@ -18,6 +18,7 @@
                     <group>
                         <group string="Información Económica">
                             <field name="importe"/>
+                            <field name="pagada_por_empresa"/>
                             <field name="fecha"/>
                         </group>
                         <group string="Asignación">
@@ -45,6 +46,7 @@
                 <field name="empleado_id"/>
                 <field name="vehiculo_id"/>
                 <field name="importe" sum="Total"/>
+                <field name="pagada_por_empresa"/>
                 <field name="state" widget="badge"/>
             </list>
         </field>

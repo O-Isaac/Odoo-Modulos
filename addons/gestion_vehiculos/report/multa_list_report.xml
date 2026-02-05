@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_report_multa_list" model="ir.actions.report">
+            <field name="name">Listado Total de Multas</field>
+            <field name="model">gestion.multa</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">gestion_vehiculos.report_multa_list</field>
+            <field name="report_file">gestion_vehiculos.report_multa_list</field>
+            <field name="binding_model_id" ref="model_gestion_multa"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <template id="report_multa_list">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 class="text-center">Listado Total de Multas</h2>
+                        <!-- Obtenemos TODAS las multas, independientemente de la selección -->
+                        <t t-set="all_multas" t-value="request.env['gestion.multa'].search([], order='fecha desc')"/>
+                        
+                        <table class="table table-sm o_main_table mt-4">
+                            <thead>
+                                <tr>
+                                    <th>Infracción / Tipo</th>
+                                    <th>Fecha</th>
+                                    <th>Empleado Sancionado</th>
+                                    <th class="text-right">Cantidad</th>
+                                    <th class="text-center">Pagada por Empresa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="all_multas" t-as="o">
+                                    <tr>
+                                        <td><span t-field="o.name"/></td>
+                                        <td><span t-field="o.fecha"/></td>
+                                        <td><span t-field="o.empleado_id.name"/></td>
+                                        <td class="text-right">
+                                            <span t-field="o.importe" t-options='{"widget": "monetary", "display_currency": o.env.company.currency_id}'/>
+                                        </td>
+                                        <td class="text-center">
+                                            <t t-if="o.pagada_por_empresa">Sí</t>
+                                            <t t-else="">No</t>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+
+                        <div class="row justify-content-end mt-4">
+                            <div class="col-4">
+                                <table class="table table-sm table-bordered">
+                                    <tr>
+                                        <td><strong>Nº Total de Multas:</strong></td>
+                                        <td class="text-right">
+                                            <span t-esc="len(all_multas)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Importe Total:</strong></td>
+                                        <td class="text-right">
+                                            <span t-esc="sum(all_multas.mapped('importe'))" t-options='{"widget": "monetary", "display_currency": env.company.currency_id}'/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

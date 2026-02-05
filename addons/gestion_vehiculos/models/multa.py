@@ -23,3 +23,5 @@ class Multa(models.Model):
     
     # Opción extra: Relación con el vehículo (si quisieras saber con qué coche fue)
     vehiculo_id = fields.Many2one('gestion.vehiculo', string='Vehículo Implicado')
+
+    pagada_por_empresa = fields.Boolean(string='Pagada por la empresa', default=False)

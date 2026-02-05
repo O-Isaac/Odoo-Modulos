@@ -19,6 +19,7 @@
         'views/multa_view.xml',
         'views/menu.xml',
         'report/multa_report.xml',
+        'report/multa_list_report.xml',
     ],
     'demo': [
         'demo/marcas.xml',      # 1º: Las marcas no dependen de nada
