@@ -6,6 +6,7 @@
         <field name="arch" type="xml">
             <form>
                 <header>
+                    <button name="%(gestion_vehiculos.action_report_multa)d" string="Imprimir Multa" type="action" class="oe_highlight" icon="fa-print"/>
                     <field name="state" widget="statusbar" options="{'clickable': '1'}"/>
                 </header>
                 <sheet>
@@ -18,7 +19,7 @@
                     <group>
                         <group string="Información Económica">
                             <field name="importe"/>
-                            <field name="pagada_por_empresa"/>
+                            <field name="pagada_por_empresa" widget="boolean_toggle"/>
                             <field name="fecha"/>
                         </group>
                         <group string="Asignación">
@@ -46,7 +47,7 @@
                 <field name="empleado_id"/>
                 <field name="vehiculo_id"/>
                 <field name="importe" sum="Total"/>
-                <field name="pagada_por_empresa"/>
+                <field name="pagada_por_empresa" widget="boolean_toggle"/>
                 <field name="state" widget="badge"/>
             </list>
         </field>
@@ -88,6 +89,19 @@
         </field>
     </record>
 
+    <!-- Vista Calendar para Multa -->
+    <record id="view_gestion_multa_calendar" model="ir.ui.view">
+        <field name="name">gestion.multa.calendar</field>
+        <field name="model">gestion.multa</field>
+        <field name="arch" type="xml">
+            <calendar string="Calendario de Multas" date_start="fecha" color="state" mode="month">
+                <field name="name"/>
+                <field name="empleado_id"/>
+                <field name="pagada_por_empresa"/>
+            </calendar>
+        </field>
+    </record>
+
     <!-- Vista de búsqueda para Multa -->
     <record id="view_gestion_multa_search" model="ir.ui.view">
         <field name="name">gestion.multa.search</field>
@@ -97,12 +111,16 @@
                 <field name="name"/>
                 <field name="empleado_id"/>
                 <field name="vehiculo_id"/>
+                <field name="fecha"/>
                 <separator/>
                 <filter string="Pendientes" name="pendiente" domain="[('state', '=', 'pendiente')]"/>
                 <filter string="Pagadas" name="pagada" domain="[('state', '=', 'pagada')]"/>
+                <separator/>
+                <filter string="Fecha" name="filter_fecha" date="fecha"/>
                 <filter string="Empleado" name="group_by_empleado" context="{'group_by': 'empleado_id'}"/>
                 <filter string="Vehículo" name="group_by_vehiculo" context="{'group_by': 'vehiculo_id'}"/>
                 <filter string="Estado" name="group_by_state" context="{'group_by': 'state'}"/>
+                <filter string="Pagada por Empresa" name="group_by_pagada_empresa" context="{'group_by': 'pagada_por_empresa'}"/>
             </search>
         </field>
     </record>
@@ -111,7 +129,7 @@
     <record id="action_gestion_multa" model="ir.actions.act_window">
         <field name="name">Multas</field>
         <field name="res_model">gestion.multa</field>
-        <field name="view_mode">list,form,kanban</field>
+        <field name="view_mode">list,form,kanban,calendar</field>
         <field name="search_view_id" ref="view_gestion_multa_search"/>
     </record>
 </odoo>

@@ -13,6 +13,7 @@
             <field name="empleado_id" ref="emp_2" />
             <field name="vehiculo_id" ref="veh_2" />
             <field name="state">pagada</field>
+            <field name="pagada_por_empresa">True</field>
         </record>
         <record id="multa_3" model="gestion.multa">
             <field name="name">Uso de móvil al volante</field>
@@ -34,6 +35,7 @@
             <field name="empleado_id" ref="emp_5" />
             <field name="vehiculo_id" ref="veh_5" />
             <field name="state">pagada</field>
+            <field name="pagada_por_empresa">True</field>
         </record>
         <record id="multa_6" model="gestion.multa">
             <field name="name">ITV caducada</field>
